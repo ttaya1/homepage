@@ -1,0 +1,550 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #f0f2ff;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (min-width:860px) {
+
+  .menu-1 {
+    display: none;
+  }
+  
+  .header {
+    height: 60px;
+    width: 100%;
+    padding: 0px 15px;
+    background-color:#f0f2ff;
+    position: fixed; /*常に画面の上に要素を固定*/
+    top: 0;
+    z-index: 1;
+    display: flex; /*直下の子要素を横並びにする*/
+  }
+  
+  nav {
+    margin: 0 0 0 auto;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .headlist {
+    display: flex; /*リストを横並びにする*/
+    list-style: none; /*listの中点（・）を消す*/
+    padding: 0;
+    margin: 0;
+  }
+  
+  .KSD {
+    position: relative;
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+  
+  .logo {
+    position: absolute;
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    top:20px;
+  
+  }
+  
+  .head {
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    line-height: 60px;
+    padding: 0 20px; /*各リスト項目の余白左右20px*/
+    position: relative; /*アンダーバーの位置を決めるための基準*/
+  }
+  
+  .headli  ::after {
+    position: absolute;
+    bottom: 20px; /*アンダーバーが位置する、各リストの下*/
+    left: 0; /*アンダーバーを各リストの左端に指定*/
+    content:  ''; 
+    width: 100%;
+    height: 2px;
+    background: hsla(0, 21%, 56%, 0.336);
+    transform: scale(0,1);
+    transform-origin: center top;
+    transition: transform 0.75s;
+  }
+  
+  .headli  :hover::after {
+    transform: scale(1, 1);
+  }
+  }
+  
+  @media screen and (max-width:860px) {
+    
+    .headlist {
+      display: none;
+    }
+  
+    .logo {
+      position: absolute;
+      color: #000000; /*黒文字にする*/
+      text-decoration: none; /*リンクの下線を削除*/
+      display: block; /*幅と高さを持ったブロック要素*/
+      top:20px;
+    }
+  
+    .KSD {
+      position: relative;
+      color: #000000; /*黒文字にする*/
+      text-decoration: none; /*リンクの下線を削除*/
+      display: block; /*幅と高さを持ったブロック要素*/
+    
+    }
+    
+  
+    .header {
+      height: 60px;
+      width: 100%;
+      padding: 0px 15px;
+      background-color:#f0f2ff;
+      position: fixed; /*常に画面の上に要素を固定*/
+      top: 0;
+      z-index: 1;
+    }
+    
+  
+    .menu-1 {
+      margin: 0;
+      position: fixed;
+      text-align: right;
+      width: 20%;
+      text-align: right;
+      left: 80%;
+      top: 23px;
+      z-index: 100;
+  }
+  
+  .menu-1 a {
+      display: block;
+  /*  text-decoration: none;*/
+      color: #000;
+      font-size: 8px;
+      text-align: center;
+      position: relative;
+      margin: 20px 0;
+  }
+  
+  label {
+      display: block;
+      line-height: 1;
+      color :#000000;
+      background : transparent;
+      cursor :pointer;
+      position: relative;
+      z-index: 100;
+      width:100%;
+      text-align: center;
+      z-index: 100;
+      padding: 0 0 10px 0;
+  }
+  
+  input {
+      display: none;
+  }
+  
+  .menu-1 ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color:#f0f2ff;
+    }
+  
+  
+  .menu-1 li {
+      height: 0;
+      overflow: hidden;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      
+  }
+  
+  #menu_bar01:checked ~ #links01 li {
+      height: 54px;
+      opacity: 1;
+  }
+  
+  
+  .links01 {
+    z-index: 100;
+  }
+  
+  .menu_bar01 {
+    z-index: 100;
+  }
+  
+  .checkbox {
+    z-index: 100;
+  }
+  
+  }
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+
+}
+
+.jigyo-contents {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10%;
+  font-size: 1vw;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 221, 250, 0.5);
+  border-radius: 30px;
+  padding: 0 5%;
+  font-size: 1vw;
+  margin: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 36, 239, 0.5);
+  border-radius: 30px;
+  padding: 0 5%;
+  font-size: 1vw;
+  margin: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px 5%;
+  text-align: center;
+}
+
+.sub-contents {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+  text-align: center;
+}
+
+.motto {
+  position: relative;
+  font-size: 1.5vw;
+  text-decoration: underline;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.acd-check{
+  display: none;
+}
+.acd-label{
+  border: dotted 1px #333;
+  color: #000000;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5vw;
+  cursor :pointer;
+
+}
+.acd-content{
+  border: 1px dotted #333;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+  visibility: hidden;
+  text-align: center;
+}
+.acd-check:checked + .acd-label + .acd-content{
+  height: fit-content;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+
+.jigyo-fot {
+  position: relative;
+  width: 30vw;
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 30px;
+}
+
+.leader {
+  position: relative;
+  width:40%;
+}
+
+.hr1{
+  position:relative;
+  height: 3px;
+	border-width: 0;
+	background-color: #f3ecec;
+	background-image: -webkit-linear-gradient(right,
+	#ddd6d6 5px,#855454 5px);
+	background-image: linear-gradient(-90deg,
+	#ddd6d6 5px,#855454 5px);
+	background-size: 10px 10px;
+  padding: 0 10%;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10%;
+  text-align: left;
+}
+
+.jigyo-title {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.small {
+  font-size: 1.5vw;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+h3 {
+  margin: 30px;
+}
+
+.mem-fot {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fot {
+  position: relative;
+  width:100%;
+  height: auto;
+}
+
+.fot {
+  position: relative;
+  width:70%;
+  height: auto;
+  padding: 5%;
+}
+
+@media screen and (min-width:860px) {
+  .footber {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    position:absolute;
+    z-index: 1;
+    list-style: none; /*listの中点（・）を消す*/
+    bottom: 0;
+    left: 0;
+    top:90vw;
+    color:rgb(255, 255, 255);
+
+  }
+  
+}
+
+@media screen and (max-width:860px) {
+  .footber {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+  background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+  background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+  position:absolute;
+  z-index: 1;
+  list-style: none; /*listの中点（・）を消す*/
+  bottom: 0;
+  left: 0;
+  color:rgb(255, 255, 255);
+
+}
+}
+
+
+
+@media screen and (min-width:860px) {
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 10%;
+  }
+  }
+  
+  @media screen and (max-width:860px) {
+    .footer {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }  
+  }
+  
+  .foot {
+    position: relative;
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    font-size: 1vw;
+    font-weight: bold;
+    width:auto;
+    height: auto;
+    padding: 0 10%;
+    color:rgb(255, 255, 255);
+
+  }
+  
+  .footli {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .foot-gaiyo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+  
+  .foot-gaiyo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+  
+  
+  h4 {
+    position: relative;
+    font-size: 10px;
+    display: block;
+    margin: 0;
+    font-weight: lighter;
+  }
+  
+  .foot-jigyo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+  
+  .foot-active {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+  
+  .foot-recruit {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+  
+  .foot-contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .KSD-small {
+    display: none;
+  }
+  
+  .smallver {
+    display: none;
+  }
+  
+.page-bottom {
+  position:absolute;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  bottom: 0;
+}
+  
+  .copy-right {
+    margin: 0;
+    padding: 0;
+  }

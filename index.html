@@ -1,167 +1,255 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/top.css" rel="stylesheet"/>
-
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--ksd-->
+<meta name="Description" content="(株)ケイエスディは石川県を拠点に金融業・各種業務システムの開発を行っています。お客様のあらゆるニーズに対応するために専門的知識集団を組織し、英知を結集して時代の変化に対応します。">
+<meta name="Keywords" content="ksd,ケイエスディ,ケイエスデイ,コンピュータ,ソフトウェア,金融システム,システム開発,株式会社ケイエスディ,石川県,北陸,金沢,白山,小松,ＫＳＤ">
+<meta name="robots" content="index,nofollow">
+<link rel="start" href="index.html">
+<link rel="index" href="ksd/index.html">
 <title>株式会社ケイエスディ</title>
+<!--ksd-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(_anchor){
+    $('a[href^=#]').click(function(){
+        var speed = 1000;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+</script>
+<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<style>
+html, body{margin:0px; padding:0px;}
+body {font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;}
+/* -------------------------------------------------- */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* -------------------------------------------------- */
+header{
+  z-index: 1;
+  position:fixed;
+  width:100%;
+  height:60px;
+  background:rgba(0,0,0,0.3);
+}
+a#logo {
+  color:rgb(255,255,255);
+  background:rgba(0,0,0,0.5);
+  display:inline-block;
+  padding:0px 30px;
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:700;
+}
+nav {
+  color:rgb(255,255,255);
+  background:rgba(0,0,0,0.5);
+  text-align:right;
+  padding:5px 20px 5px 0px;
+}
+nav a{
+  color:#fff;
+}
+/* -------------------------------------------------- */
+footer{
+  z-index: 1;
+  position: fixed;
+  bottom: 0px;
+  padding:5px 10px 0px 10px;
+  width:100%;
+  height:30px;
+  background:rgba(0,0,5,0.5);
+}
+#footer-box {
+ display:flex; flex-wrap:wrap;
+ justify-content: space-between;
+}
+#footer-box > * {
+  color:rgb(255,255,255);
+  font-size:small;
+}
+/* -------------------------------------------------- */
+.inner1{min-height:650px;position:relative;text-align:center;position:relative;width:100%;
+  background: rgba(255,255,255,0.3) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+}
+.inner1 h1{color:rgb(  0,  0,  0);
+  font-family: 'Audiowide', cursive;
+  font-weight:400;
+  font-size:32px;
+  padding:0px 20px;
+}
+.inner1 p{color:rgb(  0,  0,  0);
+  font-weight:400;
+  font-size:18px;
+  padding:0px 20px;
+}
+.inner1 a{display:inline-block;text-decoration:none;}
+/* -------------------------------------------------- */
+.inner2{min-height:400px;position:relative;text-align:center;position:relative;width:100%;
+  background: rgba(  0,  0,  0,0.5) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+}
+.inner2 h1{color:rgb(255,255,255);
+  font-family: 'Audiowide', cursive;
+  font-weight:400;
+  font-size:32px;
+  padding:0px 20px;
+}
+.inner2 p{color:rgb(255,255,255);
+  font-weight:400;
+  font-size:18px;
+  padding:0px 20px;
+}
+.inner2 a{display:inline-block;text-decoration:none;}
+/* -------------------------------------------------- */
+#split101 .inner1 .linkbox{
+  background:rgba(255,255,255,0.3);
+}
+#split101 .inner1 h1{
+  font-family: 'Anton', sans-serif;
+}
+#split101 .inner1 p{
+  font-size:16px;
+}
+/* -------------------------------------------------- */
+.linkbox {position:absolute;top:50%;height:10em;margin-top:-5em;width:100%;}
+/* -------------------------------------------------- */
+#split101{
+ background:url(ksd/_img/im001.jpg);
+ background-size:cover;
+ background-position:center center;background-attachment:fixed;
+}
+#split102{
+ background:url(ksd/_img/im002.jpg);
+ background-size:cover;
+ background-position:center center;background-attachment:fixed;
+}
+#split103{
+ background:url(ksd/_img/im003.jpg);
+ background-size:cover;
+ background-position:center center;background-attachment:fixed;
+}
+
+</style>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">
-      <a class="KSD" href="index.html">株式会社ケイエスディ</a>
-    </div>
-<!--▽ヘッダーリスト-->
-    <nav>
-      <ul class="headlist">
-        <li class="headli"><a class="head" href="./content/greeting.html">ごあいさつ</a></li>
-        <li class="headli"><a class="head" href="./content/company.html">会社概要</a></li>
-        <li class="headli"><a class="head" href="./content/work-top.html">事業内容</a></li>
-        <li class="headli"><a class="head" href="./content/active.html">取組内容</a></li>
-        <li class="headli"><a class="head" href="./content/recruit.html">採用情報</a></li>
-      </ul>
-    </nav>
- <!--△ヘッダーリスト-->
-  </div>
-  <div class="menu-1">
-    <label for="menu_bar01">menu</label>
-    <input type="checkbox" id="menu_bar01" />
-    <ul id="links01">
-        <li><a href="./content/greeting.html">ご挨拶</a></li>
-        <li><a href="./content/company.html">会社概要</a></li>
-        <li><a href="./content/work-top.html">事業内容</a></li>
-        <li><a href="./content/active.html">取組内容</a></li>
-        <li><a href="./content/recruit.html">採用情報</a></li>
-    </ul>
-  </div>
+<header>
+  <a href="#split101" id="logo">KSD 株式会社ケイエスディ</a>
+</header>
 
-<!--▽トップページ画像リスト-->
-  <div class="container">
-    <img class="image" src= "./images/top-4.JPG"/>
-    <img class="image" src= "./images/top-2.JPG"/>
-    <img class="image" src= "./images/top-3.JPG"/>
-    <img class="image" src= "./images/top-1.JPG"/>
-    <div class="motto">
-      <h1>
-        信じた道を新しい心（芯）を持って<br>
-        真っすぐ進んでいく、<br>
-        そんな会社であり続ける。
-      </h1>
+<section id="split101">
+  <div class="inner1">
+    <div class="linkbox">
+      <a href="ksd/index.html">
+      <h1>Kanazawa Software Development</h1>
+      <p>お客様のあらゆるニーズに&ensp;対応するために専門的知識集団を組織し&ensp;英知を結集して時代の変化に対応します</p>
+      <br>
+      <p>&laquo;&ensp;HOME&ensp;&raquo;</p>
+      </a>
+      <p><br></p>
+      <nav>
+        &#9660;<a href="#split201">MESSAGE</a>
+        &#9660;<a href="#split102">CORPORATE</a>
+        &#9660;<a href="#split202">SERVICE</a>
+        &#9660;<a href="#split103">RECRUIT</a>
+      </nav>
     </div>
   </div>
-<!--△トップページ画像リスト-->
-  <div class="jigyotitle">
-    <h2>事業内容</h2>
-    <hr class="hr1">
-  </div>
-    <div class="jigyo_wrap">
-      <ul class="jigyo_list jigyo_list--left">
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業①.JPG"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/tyu-rec-2.JPG"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業③.jpg"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業④.JPG"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業⑤.JPG"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業⑥.JPG"></li>
-      </ul>
-      <ul class="jigyo_list jigyo_list--left">
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業①.JPG"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/tyu-rec-2.JPG"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業③.jpg"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業④.JPG"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業⑤.JPG"></li>
-        <li class="jigyo_item"><img class="jigyofot" src="./images/事業⑥.JPG"></li>
-      </ul>
-    </div>
-  <div class="torikumititle">
-    <h2>取組内容</h2>
-    <hr class="hr1">
-  </div>
-  <div class="torikumilist">
-    <div class="active-contents">
-    <img class="torikumifot" src="./images/active-1.JPG">
-    <h4>オフィス改善</h4>
-  </div>
-  <div class="active-contents">
-    <img class="torikumifot" src="./images/active-2.JPG">
-    <h4>オフィスカジュアル</h4>
-  </div>
-  <div class="active-contents">
-    <img class="torikumifot" src="./images/active-3.JPG">
-    <h4>クラブ活動</h4>
-  </div>
-  </div>
-  <div class="news-recruit-privacy">
-    <div class="newstitle">
-      <h2>ＮＥＷＳ</h2>
-      <hr class="hr1">
-      <div class="newslist">
-        <h3>
-          <span class="days">2021.04.01</span> 【<span class="event">入社式</span>】新たに３名入社！<br>
-          <span class="days">2021.10.22</span> 【<span class="club">クラブ</span>】フットサル再開！<br>
-          <span class="days">2022.04.01</span> 【<span class="event">入社式</span>】新たに３名入社！<br>
-          <span class="days">2022.07.22</span> 【<span class="club">クラブ</span>】ついに野球始動！<br>
-        </h3>
-      </div>  
-    </div>
-    <div class="aaaaa">
-    <div class="recruittitle">
-      <h2>採用情報</h2>
-      <hr class="hr1">
-      <div class="recruitlist">
-        <a href="https://job.mynavi.jp/24/pc/search/corp244583/outline.html" target="_blank">
-        <img src="https://job.mynavi.jp/conts/kigyo/2024/logo/banner_entry_130_130.gif" alt="マイナビ2024" border="0"></a>
-      </div>
-      </div>
-      <div class="smafo">    
-    <div class="privacytitle">
-      <h2>プライバシー</h2>
-      <hr class="hr1">
-      <div class="privacylist">
-        <a href="https://privacymark.jp/">
-        <img class="Pmark" src="./images/19000655_07_200_JP.png">
-        <p>
-          「プライバシーマーク制度」<br>
-          https://privacymark.jp/
-        </p></a>
-        <p>
-          当社は、2010年12月20日に一般財団法人日本情報経済社会推進協会（JIPDEC）から、「プライバシーマーク」の付与認定を受けています。
-        </p>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-<!--▽ヘッダーリスト-->
-  <div class="footber">
-    <div class="footer">
-      <div class="foot-gaiyo">
-        <li class="footli"><a class="foot" href="./content/company.html">会社概要</a></li>
-          <h4>・ＫＳＤ</h4>
-      </div>
-      <div class="foot-jigyo">
-        <li class="footli"><a class="foot" href="./content/work-top.html">事業内容</a></li>
-          <h4>・金融システム第一本部</h4>
-          <h4>・金融システム第二本部</h4>
-          <h4>・経営管理本部</h4>
-          <h4>・ＤＸ推進室</h4>
-      </div>
-      <div class="foot-active">
-        <li class="footli"><a class="foot" href="./content/active.html">取組内容</a></li>
-          <h4>・オフィス改善</h4>
-          <h4>・オフィスカジュアル</h4>
-          <h4>・クラブ活動</h4>
-      </div>
-      <div class="foot-recruit">
-        <li class="footli"><a class="foot" href="./content/recruit.html">採用情報</a></li>
-          <h4>・新卒採用</h4>
-          <h4>・中途採用</h4>
-      </div>
-    </div>
-    <div class="page-bottom">
-      <p class="copy-right">©1991-2023 KANAZAWA SOFTWARE DEVELOPMENT.</p>
-    </div>
-  </div>
+</section>
 
+<section id="split201">
+  <div class="inner2">
+    <div class="linkbox">
+      <a href="ksd/message/message.html">
+      <h1>MESSAGE</h1>
+      <p>ごあいさつ</p>
+      </a>
+      <p><br></p>
+      <nav>
+        &#9650;<a href="#split101">TOP</a>
+        &#9660;<a href="#split102">CORPORATE</a>
+        &#9660;<a href="#split202">SERVICE</a>
+        &#9660;<a href="#split103">RECRUIT</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section id="split102">
+  <div class="inner1">
+    <div class="linkbox">
+      <a href="ksd/corporate/corporate.html">
+      <h1>CORPORATE</h1>
+      <p>会社概要</p>
+      </a>
+      <p><br></p>
+      <nav>
+        &#9650;<a href="#split101">TOP</a>
+        &#9650;<a href="#split201">MESSAGE</a>
+        &#9660;<a href="#split202">SERVICE</a>
+        &#9660;<a href="#split103">RECRUIT</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section id="split202">
+  <div class="inner2">
+    <div class="linkbox">
+      <a href="ksd/service/service.html">
+      <h1>SERVICE</h1>
+      <p>事業内容</p>
+      </a>
+      <p><br></p>
+      <nav>
+        &#9650;<a href="#split101">TOP</a>
+        &#9650;<a href="#split201">MESSAGE</a>
+        &#9650;<a href="#split102">CORPORATE</a>
+        &#9660;<a href="#split103">RECRUIT</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section id="split103">
+  <div class="inner1">
+    <div class="linkbox">
+      <a href="ksd/recruitment/recruitment.html">
+      <h1>RECRUIT</h1>
+      <p>採用情報</p>
+      </a>
+      <p><br></p>
+      <nav>
+        &#9650;<a href="#split101">TOP</a>
+        &#9650;<a href="#split201">MESSAGE</a>
+        &#9650;<a href="#split102">CORPORATE</a>
+        &#9650;<a href="#split202">SERVICE</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div id="footer-box">
+   <div>&copy;1991-2020 KANAZAWA SOFTWARE DEVELOPMENT.</div>
+   <a href="ksd/privacy.html">&raquo; 個人情報保護方針</a>
+  </div>
+</footer>
 </body>
-</html> 
+</html>

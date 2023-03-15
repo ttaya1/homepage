@@ -452,7 +452,6 @@ h3 {
     position: relative;
     color: #000000; /*黒文字にする*/
     text-decoration: none; /*リンクの下線を削除*/
-    font-size: 1vw;
     font-weight: bold;
     width:auto;
     height: auto;

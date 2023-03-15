@@ -109,7 +109,6 @@ body {
       color: #000000; /*黒文字にする*/
       text-decoration: none; /*リンクの下線を削除*/
       display: block; /*幅と高さを持ったブロック要素*/
-      font-size: 16px;
       font-weight: bold;  
     }
     
@@ -229,7 +228,6 @@ a  {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 0 10%;
   text-align: center;
 }
 
@@ -243,9 +241,9 @@ a  {
 
 .rec-ft {
   position: relative;
-  width: 70%;
+  width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 0 0 0 100%/0 0 0 100%;
   overflow: hidden;
 
 }
@@ -255,31 +253,110 @@ p {
   padding: 0;
 }
 
-
-.footber {
-  width: 100%;
-  height:150px;
-  background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
-  background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
-  background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
-  position:relative;
-  z-index: 1;
-  list-style: none; /*listの中点（・）を消す*/
-  top: 25vw;
-  color: white;
-}
-
-.footer {
+@media screen and (max-width:860px) {
+.service {
   position: relative;
-  display: flex;
-  padding: 0 10%;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
 }
 
+.active-sm {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20vw 0;
+}
+
+.acfot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 100%/0 0 0 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width:860px) {
+.ac-con-2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  font-size: 1.5vw;
+  margin-top: -25vw;
+  margin-left: 15px;
+  background-color: rgba(46, 146, 146, 0.5);
+  font-family:'Times New Roman', Times, serif;
+}
+}
+
+@media screen and (max-width:860px) {
+  .ac-con-2 {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    font-size: 0.5rem;
+    margin-top: -25vw;
+    margin-left: 15px;
+    background-color: rgba(46, 146, 146, 0.5);
+    font-family:'Times New Roman', Times, serif;
+  }
+  }  
+
+@media screen and (min-width:860px) {
+  .footber {
+    width: 100%;
+    top: 30vw;
+    height: 150px;
+    background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    position:relative;
+    z-index: 1;
+    list-style: none; /*listの中点（・）を消す*/
+    color:rgb(255, 255, 255);
+  }
+  }
+  
+  @media screen and (max-width:860px) {
+    .footber {
+      width: 100%;
+      top: 70vw;
+      background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+      background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+      background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+      position:relative;
+      z-index: 1;
+      list-style: none; /*listの中点（・）を消す*/
+      color:rgb(255, 255, 255);
+    }
+    }
+    
+  
+  @media screen and (min-width:860px) {
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 10%;
+  }
+  }
+  
+  @media screen and (max-width:860px) {
+    .footer {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }  
+  }
+  
 .foot {
   position: relative;
   color: #000000; /*黒文字にする*/
   text-decoration: none; /*リンクの下線を削除*/
-  font-size: 1vw;
   font-weight: bold;
   width:auto;
   height: auto;
@@ -331,7 +408,7 @@ h4 {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 10px 0 30px 0;
 }
 
 .foot-contact {
@@ -348,6 +425,8 @@ h4 {
   background-color: #000;
   text-align: center;
   bottom: 0;
+  font-size: 0.1rem;
+
 }
 
 .copy-right {
@@ -355,15 +434,11 @@ h4 {
   padding: 0;
 }
 .col {
-  padding: 0;
+  padding: 0 0 50px 0;
   margin: 0;
   position: relative;
 }
 
-.col.four {
-  width: 23%;
-  margin: 0 auto;
-}
 
 .col .icon {
   border-radius: 50%;
@@ -439,6 +514,7 @@ h4 {
   padding: 0 10%;
 }
 
+@media screen and (min-width:860px) {
 .member-intro {
   position: relative;
   width: 100%;
@@ -447,6 +523,18 @@ h4 {
   margin: 0;
   text-align: center;
 }
+}
+
+@media screen and (max-width:860px) {
+  .member-intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    margin: 0;
+    text-align: center;
+  }
+  }
 
 @media screen and (min-width:860px) {
 .member-box {
@@ -496,11 +584,11 @@ h4 {
   
   .member-fot {
     position: relative;
-    width: 50%;
-    height: 100%;
-    border-radius: 50%;
+    width: 100%;
+    height: 50vw;
+    border-radius: 0 0 0 100%/0 0 0 100%;
     margin: 0;
-    padding: 0 5px;
+    padding: 0;
   }
   .member-contents {
     position: relative;
@@ -512,11 +600,39 @@ h4 {
   
 }
 
+@media screen and (min-width:860px) {
 .title-member {
   position: relative;
   font-size: 2vw;
 }
+}
+
+@media screen and (max-width:860px) {
+  .title-member {
+    position: relative;
+    font-size: 1rem;
+  }
+  }  
 
 .sss {
   text-align: center;
 }
+
+@media screen and (max-width:860px) {
+.names {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  margin-top: -15vw;
+  margin-bottom: 15vw;
+  text-decoration: underline;
+}
+}
+
+@media screen and (min-width:860px) {
+  .names {
+    padding: 10px 0;
+  }
+}
+

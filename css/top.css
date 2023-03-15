@@ -11,11 +11,22 @@ body {
   height: 100%;
 }
 
+@media screen and (min-width:860px) {
 .container {
   position: relative;
   width: 100%;
   height: 100%;
 }
+}
+
+@media screen and (max-width:860px) {
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 5% 0;
+  }
+  }
 
 @media screen and (min-width:860px) {
 
@@ -209,17 +220,34 @@ body {
   
   }
   
-.image {
-  position: absolute;
-  top:80px;
-  opacity: 0;
-  padding: 0 10%;
-  animation: change-img-anim 28s infinite;
-  width:100%;
-  height:auto;
-  overflow: hidden;
-  border-radius: 15%;
+@media screen and (min-width:860px) {
+  .image  {
+    position: absolute;
+    top:80px;
+    opacity: 0;
+    padding: 0 20%;
+    animation: change-img-anim 28s infinite;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    border-radius: 30% 0 30% 0;
+  }
 }
+
+@media screen and (max-width:860px) {
+  .image  {
+    position: absolute;
+    top:80px;
+    opacity: 0;
+    animation: change-img-anim 28s infinite;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    border-radius: 30% 0 30% 0;
+  }
+}
+
+
 .image:nth-of-type(1) {
   animation: change-img-anim-first 28s infinite;
   animation-delay: 0s;
@@ -249,19 +277,22 @@ body {
   100%{ opacity: 0;}
 }
 
+@media screen and (min-width:860px) {
 .jigyotitle {
   font-size: 1vw;
   position: relative;
   margin: 0 10%;
-  top:70vw;
+  top:35vw;
+}
 }
 
 @media screen and (max-width:860px) {
   .jigyotitle {
-    font-size: 1vw;
+    font-size: 1rem;
     position: relative;
-    margin: 0 10%;
-    top:75vw;
+    margin: 0 5%;
+    top:65vw;
+    text-align: center;
   }  
 }
 
@@ -286,23 +317,29 @@ _:-ms-lang(x)::-ms-backdrop,
 }
 /*----------------------------*/
 
+@media screen and (min-width:860px) {
 .jigyo_wrap {
   display: flex;
   overflow: hidden;
   position:relative;
-  top: 73vw;
+  top: 37vw;
   margin: 0 10%;
   border-radius: 30px;
 }
 
+.top-jigyo {
+  display: none;
+}
+
+.fotop-content {
+  display: none;
+}
+
+}
+
 @media screen and (max-width:860px) {
   .jigyo_wrap {
-    display: flex;
-    overflow: hidden;
-    position:relative;
-    top: 78vw;
-    margin: 0 10%;
-    border-radius: 30px;
+    display: none;
   }
   
 }
@@ -337,6 +374,38 @@ position: relative;
   height:100%;
 }
 
+.top-jigyo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 66vw;
+  border-radius: 0 0 0 100%/0 0 0 100%;
+  overflow: hidden;
+}
+
+.fotop {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.fotop-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5vw;
+  padding: 0 2%;
+  top: 42vw;
+  font-family:'Times New Roman', Times, serif;
+  color: #000;
+}
+
+.jigyo-top {
+  color: #000000; /*黒文字にする*/
+  text-decoration: none; /*リンクの下線を削除*/
+
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -345,7 +414,7 @@ ul {
 
 .hr1{
   position:relative;
-  margin-top: -1vw;
+  margin-top: 0vw;
   height: 3px;
 	border-width: 0;
 	background-color: #f3ecec;
@@ -357,7 +426,7 @@ ul {
   padding: 0 10%;
 }
 
-.h2 {
+h2 {
   padding: 0;
   margin: 0;
 }
@@ -370,31 +439,48 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width:860px) {
 .motto {
-  position: absolute;
+  position: relative;
   width: 100%;
   margin: 0;
-  padding: 0 15vw;
-  top: 80px;
-  font-size: 2vw;
+  padding: 0 23%;
+  top: 17vh;
+  font-size: 1.5vw;
   color:rgb(255, 255, 255);
-  text-align: center;
   font-family:'Times New Roman', Times, serif;
 }
+}
 
+@media screen and (max-width:860px) {
+  .motto {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 10%;
+    top: 17vh;
+    font-size: 2vw;
+    color:rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+  }
+}
+
+@media screen and (min-width:860px) {
 .torikumititle {
   font-size: 1vw;
   position: relative;
   margin: 0 10%;
-  top:75vw;
+  top:41vw;
+}
 }
 
 @media screen and (max-width:860px) {
   .torikumititle {
-    font-size: 1vw;
+    font-size: 1rem;
     position: relative;
-    margin: 0 10%;
-    top:80vw;
+    margin: 0 5%;
+    top:50vw;
+    text-align: center;
   }
   
 }
@@ -402,7 +488,7 @@ p {
 @media screen and (min-width:860px) {
 .torikumilist {
   position:relative;
-  top:77vw;
+  top:43vw;
   display: flex;
   width: 100%;
   text-align: center  ;
@@ -413,15 +499,15 @@ p {
 @media screen and (max-width:860px) {
   .torikumilist {
     position:relative;
-    top:82vw;
+    top:50vw;
     width: 100%;
     text-align: center  ;
-    padding: 0 10%;
+    padding: 0;
   }
   
 }
 
-
+@media screen and (min-width:860px) {
 .torikumifot {
   position: relative;
   width:100%;
@@ -430,6 +516,7 @@ p {
   overflow: hidden;
   border-radius: 30px;
   transition-duration: 0.3s;
+}
 }
 
 .active-contents .torikumifot{
@@ -449,10 +536,11 @@ p {
     height:auto;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 0 0 0 80%/0 0 0 80%;
   }
 }
 
+@media screen and (min-width:860px) {
 .active-contents {
   position: relative;
   width: 100%;
@@ -460,16 +548,44 @@ p {
   margin: 0;
   padding: 0 10px;
 }
+}
 
 @media screen and (max-width:860px) {
   .active-contents {
     position: relative;
-    width: 60%;
-    height: 60%;
-    margin: 0 auto;
-    padding: 2vw 10px;
+    width: 100%;
+    height: auto;
+    margin: 10vw 0;
+    padding: 0;
     text-align: center;
   }  
+}
+
+@media screen and (min-width:860px) {
+  .active-con {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 0.5vw;
+    padding: 0 2%;
+    font-family:'Times New Roman', Times, serif;
+    color: #000;
+  }
+  }
+  
+
+@media screen and (max-width:860px) {
+.active-con {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5vw;
+  padding: 0 2%;
+  font-family:'Times New Roman', Times, serif;
+  color: #000;
+  text-align: left;
+  margin-top: -15vw;
+}
 }
 
 .event {
@@ -485,6 +601,7 @@ p {
   display: flex;
 }
 
+@media screen and (min-width:860px) {
 .newslist {
   position:relative;
   height: 10.5vw;
@@ -497,6 +614,21 @@ p {
   scrollbar-track-color: #eee;
   -webkit-overflow-scrolling: touch;
 }
+}
+
+@media screen and (max-width:860px) {
+  .newslist {
+    position:relative;
+    padding: 0 10px 10px 10px;
+    background: rgb(254, 227, 227);
+    display: flex;
+    font-size: 10px;
+    overflow-y: scroll;
+    scrollbar-face-color: #999;
+    scrollbar-track-color: #eee;
+    -webkit-overflow-scrolling: touch;
+  }
+  }  
 
 .newslist::-webkit-scrollbar {
   width: 5px;
@@ -518,7 +650,7 @@ p {
   position: relative;
   width:auto;
   display: flex;
-  top: 80vw;
+  top: 44vw;
   margin: 0 10%;
 }
 }
@@ -528,15 +660,27 @@ p {
     font-size: 1vw;
     position: relative;
     width:auto;
-    top: 80vw;
-    margin: 0 10%;
+    top: 55vw;
+    margin: 0 5%;
   }  
 }
 
+@media screen and (min-width:860px) {
 .newstitle {
   position: relative;
   width: 100%;
 }
+}
+
+@media screen and (max-width:860px) {
+  .newstitle {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+
+  }
+  }  
 
 @media screen and (min-width:860px) {
 .recruittitle {
@@ -550,17 +694,31 @@ p {
   .recruittitle {
     position: relative;
     width: 100%;
-    padding: 0 5% 0 0;
+    padding: 5% 5% 0 0;
+    font-size: 1rem;
+    text-align: center;
   }  
 }
 
+@media screen and (min-width:860px) {
 .privacytitle {
   position: relative;
   width: 100%;
   font-size: 1vw;
 }
+}
 
 @media screen and (max-width:860px) {
+  .privacytitle {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10% 0 0 0;
+  }
+  }
+
+@media screen and (min-width:860px) {
   .privacytitle {
     position: relative;
     width: 100%;
@@ -613,6 +771,7 @@ p {
 }
 }
 
+@media screen and (min-width: 860px){
 .privacylist {
   position: relative;
   width: 100%;
@@ -620,12 +779,17 @@ p {
   text-align: center;
   padding: 0 20%;
 }
+}
+
+
 
 @media screen and (max-width:860px) {
   .privacylist {
     position: relative;
     width: 100%;
-  }  
+    font-size: 8px;
+    text-align: center;
+    }  
 }
 
   .aaaaa {
@@ -655,9 +819,10 @@ img {
   color: #000000; /*黒文字にする*/
 }
 
+@media screen and (min-width:860px) {
 .footber {
   width: 100%;
-  top: 90vw;
+  top: 54vw;
   height: 150px;
   background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
   background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
@@ -667,6 +832,22 @@ img {
   list-style: none; /*listの中点（・）を消す*/
   color:rgb(255, 255, 255);
 }
+}
+
+@media screen and (max-width:860px) {
+  .footber {
+    width: 100%;
+    top: 70vw;
+    background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    position:relative;
+    z-index: 1;
+    list-style: none; /*listの中点（・）を消す*/
+    color:rgb(255, 255, 255);
+  }
+  }
+  
 
 @media screen and (min-width:860px) {
 .footer {
@@ -683,7 +864,6 @@ img {
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
   }  
 }
 
@@ -691,7 +871,6 @@ img {
   position: relative;
   color: #000000; /*黒文字にする*/
   text-decoration: none; /*リンクの下線を削除*/
-  font-size: 1vw;
   font-weight: bold;
   width:auto;
   height: auto;
@@ -751,7 +930,7 @@ h4 {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 10px 0 30px 0;
 }
 
 .foot-contact {
@@ -780,6 +959,7 @@ h4 {
   background-color: #000;
   text-align: center;
   bottom: 0;
+  font-size: 0.1rem;
 }
 
 .copy-right {

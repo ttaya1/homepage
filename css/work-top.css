@@ -106,7 +106,8 @@ html {
       color: #000000; /*黒文字にする*/
       text-decoration: none; /*リンクの下線を削除*/
       display: block; /*幅と高さを持ったブロック要素*/
-    
+      font-weight: bold;
+
     }
     
   
@@ -200,6 +201,7 @@ html {
   
   }
 
+@media screen and (min-width:860px) {
 .footber {
   position:relative;
   width: 100%;
@@ -212,6 +214,22 @@ html {
   color:rgb(255, 255, 255);
 
 }
+}
+
+@media screen and (max-width:860px) {
+  .footber {
+    position:relative;
+    width: 100%;
+    background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    z-index: 4;
+    list-style: none; /*listの中点（・）を消す*/
+    color:rgb(255, 255, 255);
+  
+  }
+  }
+  
 
 @media screen and (min-width:860px) {
  .footer {
@@ -224,7 +242,6 @@ html {
 @media screen and (max-width:860px) {
   .footer {
     position: relative;
-    display: flex;
   }
 }  
 
@@ -232,7 +249,6 @@ html {
   position: relative;
   color: #000000; /*黒文字にする*/
   text-decoration: none; /*リンクの下線を削除*/
-  font-size: 1vw;
   font-weight: bold;
   width:auto;
   height: auto;
@@ -293,7 +309,7 @@ h4 {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 10px 0 30px 0;
 }
 
 .foot-contact {
@@ -310,6 +326,7 @@ h4 {
   background-color: #000;
   text-align: center;
   bottom: 0;
+  font-size: 0.1rem;
 }
 
 .copy-right {
@@ -343,13 +360,13 @@ h2 {
 
 /*--固定背景01--*/
 .cd-fixed-bg.cd-bg-1  {
-  background-image: url('../images/事業①.JPG');
+  background-image: url('../images/jigyo-H1.jpg');
   animation: fadein 5s ease-out forwards;
 }
 
 /*--固定背景02--*/
 .cd-fixed-bg.cd-bg-2  {
-  background-image: url('../images/事業④.JPG');
+  background-image: url('../images/jigyo-H2.jpg');
   animation: fadein 5s ease-out forwards;
 }
 

@@ -479,6 +479,11 @@ h1 {
   margin: 0 auto;
 }
 
+.tit:hover {
+  color: rgb(105, 105, 129);
+  background-color: rgba(156, 81, 81, 0.5);
+}
+
 @media screen and (max-width:860px) {
 h2 {
   display: none;

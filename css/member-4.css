@@ -310,6 +310,11 @@ p {
   font-size: 1.5vw;
   cursor :pointer;
 }
+
+.acd-label:hover {
+  color: red;
+  background-color: rgb(255, 255, 255, 0.5);
+}
 }
 
 @media screen and (max-width:860px) {
@@ -323,6 +328,13 @@ p {
     cursor :pointer;
     z-index: 100;
   }
+
+  .acd-label:hover {
+    color: red;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+  
+
   }  
 
 .acd-content{

@@ -295,6 +295,26 @@ h6 {
 }
 
 @media screen and (min-width:860px) {
+.active-2 {
+  width: 100%;
+  margin: 0;
+  padding: 0 5%;
+  text-align: right;
+}
+}
+
+@media screen and (max-width:860px) {
+  .active-2 {
+    width: 100%;
+    margin: 0;
+    padding: 0 5%;
+    text-align: right;
+    font-size: 0.5rem;
+  }
+  }
+  
+
+@media screen and (min-width:860px) {
 .active-main {
   position: relative;
   width: 100%;
@@ -319,17 +339,25 @@ h6 {
     width: 100%;
     height: 100%;
     top: 80px;
-    font-size: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .active-1 {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0 5%;
+    place-items: center;
+    font-size: 0.5rem;
   }
   }
 
 @media screen and (min-width:860px) {
 .active-1 {
-  position: relative;
   width: 100%;
-  height: 100%;
   display: flex;
-  margin: 40px 0;
+  margin: 0;
+  padding: 0 5%;
   place-items: center;
 }
 
@@ -338,12 +366,6 @@ h6 {
 }
 
 }
-
-@media screen and (max-width:860px) {
-  .active-1 {
-  display: none;
-  }
-  }
 
 .active-fot {
   width: 30vw;
@@ -468,10 +490,10 @@ h2 {
 
 @media screen and (min-width:860px) {
 .footber {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 150px;
-  top: 30vh;
+  bottom: 0;
   background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
   background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
   background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
@@ -633,4 +655,16 @@ h4 {
 
 .security {
   color: white;
+}
+
+.content-3 {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 250px;
+}
+
+.aaa {
+  position:relative;
+  width: 100%;
+  text-align: center;
 }

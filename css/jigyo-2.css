@@ -507,3 +507,43 @@ h4 {
   margin: 0;
   padding: 0;
 }
+
+@media screen and (min-width:860px) {
+  .page-bottom {
+    position:absolute;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    bottom: 0;
+    font-size: 0.1rem;
+  }  
+
+.secpo {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  margin-top: -35px;
+}
+}
+
+@media screen and (max-width:860px) {
+  .secpo {
+    position: relative;
+    text-align: right;
+    width: 100%;
+  }
+
+  .page-bottom {
+    position:relative;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    bottom: 0;
+    font-size: 0.1rem;
+  }
+  
+}
+
+.security {
+  color: white;
+}

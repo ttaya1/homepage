@@ -333,18 +333,17 @@ p {
     text-align: center;
 }
 
-.Q {
-    position: relative;
-    margin: 0 0 0 30vw;
-    text-align: left;
-}
-
 @media screen and (min-width: 860px) {
     .acd-check:checked + .acd-label + .acd-content {
         height: fit-content;
         opacity: 1;
         padding: 10px;
         visibility: visible;
+    }
+    .Q {
+        position: relative;
+        margin: 0 0 0 30vw;
+        text-align: left;
     }
 }
 
@@ -355,6 +354,11 @@ p {
         padding: 10px;
         visibility: visible;
         font-size: 0.5rem;
+    }
+    .Q {
+        position: relative;
+        margin: 0 0 0 20vw;
+        text-align: left;
     }
 }
 

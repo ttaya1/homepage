@@ -1,0 +1,680 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #f0f2ff;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+@media screen and (min-width:859px) {
+
+  .menu-1 {
+    display: none;
+  }
+  
+  .header {
+    height: 60px;
+    width: 100%;
+    padding: 0px 15px;
+    background-color:#f0f2ff;
+    position: fixed; /*常に画面の上に要素を固定*/
+    top: 0;
+    z-index: 200;
+    display: flex; /*直下の子要素を横並びにする*/
+  }
+  
+  nav {
+    margin: 0 0 0 auto;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .headlist {
+    display: flex; /*リストを横並びにする*/
+    list-style: none; /*listの中点（・）を消す*/
+    padding: 0;
+    margin: 0;
+  }
+  
+  .KSD {
+    position: relative;
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .logo {
+    position: absolute;
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    top:20px;
+  
+  }
+  
+  .head {
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    line-height: 60px;
+    padding: 0 20px; /*各リスト項目の余白左右20px*/
+    position: relative; /*アンダーバーの位置を決めるための基準*/
+  }
+  
+  .headli  ::after {
+    position: absolute;
+    bottom: 20px; /*アンダーバーが位置する、各リストの下*/
+    left: 0; /*アンダーバーを各リストの左端に指定*/
+    content:  ''; 
+    width: 100%;
+    height: 2px;
+    background: hsla(0, 21%, 56%, 0.336);
+    transform: scale(0,1);
+    transform-origin: center top;
+    transition: transform 0.75s;
+  }
+  
+  .headli  :hover::after {
+    transform: scale(1, 1);
+  }
+  }
+  
+  @media screen and (max-width:860px) {
+    
+    .headlist {
+      display: none;
+    }
+  
+    .logo {
+      position: absolute;
+      color: #000000; /*黒文字にする*/
+      text-decoration: none; /*リンクの下線を削除*/
+      display: block; /*幅と高さを持ったブロック要素*/
+      top:20px;
+    }
+  
+    .KSD {
+      position: relative;
+      color: #000000; /*黒文字にする*/
+      text-decoration: none; /*リンクの下線を削除*/
+      display: block; /*幅と高さを持ったブロック要素*/
+      font-weight: bold;  
+    }
+    
+  
+    .header {
+      height: 60px;
+      width: 100%;
+      padding: 0px 15px;
+      background-color:#f0f2ff;
+      position: fixed; /*常に画面の上に要素を固定*/
+      top: 0;
+      z-index: 3;
+    }
+    
+  
+    .menu-1 {
+      margin: 0;
+      position: fixed;
+      text-align: right;
+      width: 20%;
+      text-align: right;
+      left: 80%;
+      top: 23px;
+      z-index: 100;
+  }
+  
+  .menu-1 a {
+      display: block;
+  /*  text-decoration: none;*/
+      color: #000;
+      font-size: 8px;
+      text-align: center;
+      position: relative;
+      margin: 20px 0;
+  }
+  
+  label {
+      display: block;
+      line-height: 1;
+      color :#000000;
+      background : transparent;
+      cursor :pointer;
+      position: relative;
+      z-index: 100;
+      width:100%;
+      text-align: center;
+      z-index: 100;
+  }
+  
+  input {
+      display: none;
+  }
+  
+  .menu-1 ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color:#f0f2ff;
+  }
+  
+  
+  .menu-1 li {
+      height: 0;
+      overflow: hidden;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      
+  }
+  
+  #menu_bar01:checked ~ #links01 li {
+      height: 54px;
+      opacity: 1;
+  }
+  
+  
+  .links01 {
+    z-index: 100;
+  }
+  
+  .menu_bar01 {
+    z-index: 100;
+  }
+  
+  .checkbox {
+    z-index: 100;
+  }
+  
+  }
+  
+
+img {
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+
+a  {
+  position: relative; 
+  text-decoration: none; /*リンクの下線を削除*/
+  width: 100%;
+  color: #000000; /*黒文字にする*/
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+}
+
+.recruit-fot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contents {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 10%;
+}
+
+.rec-ft {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 0 100%/0 0 0 100%;
+  overflow: hidden;
+
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width:860px) {
+.service {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+}
+
+.active-sm {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20vw 0;
+}
+
+.acfot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 100%/0 0 0 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width:860px) {
+.ac-con-2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  font-size: 1.5vw;
+  margin-top: -25vw;
+  margin-left: 15px;
+  background-color: rgba(46, 146, 146, 0.5);
+  font-family:'Times New Roman', Times, serif;
+}
+}
+
+@media screen and (max-width:860px) {
+  .ac-con-2 {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    font-size: 0.5rem;
+    margin-top: -25vw;
+    margin-left: 15px;
+    background-color: rgba(46, 146, 146, 0.5);
+    font-family:'Times New Roman', Times, serif;
+  }
+  }  
+
+@media screen and (min-width:860px) {
+  .footber {
+    width: 100%;
+    top: 30vw;
+    height: 150px;
+    background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    position:relative;
+    z-index: 1;
+    list-style: none; /*listの中点（・）を消す*/
+    color:rgb(255, 255, 255);
+  }
+  }
+  
+  @media screen and (max-width:860px) {
+    .footber {
+      width: 100%;
+      top: 70vw;
+      background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+      background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+      background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+      position:relative;
+      z-index: 1;
+      list-style: none; /*listの中点（・）を消す*/
+      color:rgb(255, 255, 255);
+    }
+    }
+    
+  
+  @media screen and (min-width:860px) {
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 10%;
+  }
+  }
+  
+  @media screen and (max-width:860px) {
+    .footer {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }  
+  }
+  
+.foot {
+  position: relative;
+  color: #000000; /*黒文字にする*/
+  text-decoration: none; /*リンクの下線を削除*/
+  font-weight: bold;
+  width:auto;
+  height: auto;
+  padding: 0 10%;
+  color: white;
+
+}
+
+.footli {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.foot-gaiyo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+h4 {
+  position: relative;
+  font-size: 10px;
+  display: block;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.foot-jigyo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.foot-active {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.foot-recruit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+
+.foot-contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.page-bottom {
+  position:absolute;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  bottom: 0;
+  font-size: 0.1rem;
+
+}
+
+.copy-right {
+  margin: 0;
+  padding: 0;
+}
+.col {
+  padding: 0 0 50px 0;
+  margin: 0;
+  position: relative;
+}
+
+
+.col .icon {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  line-height: 85px;
+  text-align: center;
+  margin: 0 auto;
+  transition: background 0.25s linear, color 0.25s linear;
+  border: dotted 1px #333;
+}
+
+.col:hover > .icon {
+  background: #3669f4;
+  color: white;
+}
+
+.col p,
+.col h1 {
+  padding: 0 1%;
+  text-align: center;
+  width: 100%;
+}
+
+
+@media screen and (min-width:860px) {
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 15%;
+  display:flex;
+}
+}
+
+@media screen and (max-width:860px) {
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 15%;
+  }
+  
+}
+
+.con-title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 10%; 
+  border: solid 1px #333;
+
+}
+
+.small {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+
+.hr1{
+  position:relative;
+  height: 3px;
+	border-width: 0;
+	background-color: #f3ecec;
+	background-image: -webkit-linear-gradient(right,
+	#ddd6d6 5px,#855454 5px);
+	background-image: linear-gradient(-90deg,
+	#ddd6d6 5px,#855454 5px);
+	background-size: 10px 10px;
+  padding: 0 10%;
+}
+
+@media screen and (min-width:860px) {
+.member-intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5% 10%;
+  margin: 0;
+  text-align: center;
+}
+}
+
+@media screen and (max-width:860px) {
+  .member-intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    margin: 0;
+    text-align: center;
+  }
+  }
+
+@media screen and (min-width:860px) {
+.member-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 10%;
+  margin: 0 auto;
+}
+.member-fot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.member-contents {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  text-align: center;
+  transition-duration: 0.5s;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.member-contents img{
+  width: 100%;
+  cursor: pointer;
+}
+.member-contents:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+}
+
+}
+
+@media screen and (max-width:860px) {
+  .member-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    margin: 0 auto;
+  }
+  
+  .member-fot {
+    position: relative;
+    width: 100%;
+    height: 50vw;
+    border-radius: 0 0 0 100%/0 0 0 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .member-contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+}
+
+@media screen and (min-width:860px) {
+.title-member {
+  position: relative;
+  font-size: 2vw;
+}
+}
+
+@media screen and (max-width:860px) {
+  .title-member {
+    position: relative;
+    font-size: 1rem;
+  }
+  }  
+
+.sss {
+  text-align: center;
+}
+
+@media screen and (max-width:860px) {
+.names {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  margin-top: -15vw;
+  margin-bottom: 15vw;
+  text-decoration: underline;
+}
+}
+
+@media screen and (min-width:860px) {
+  .names {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width:860px) {
+  .page-bottom {
+    position:absolute;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    bottom: 0;
+    font-size: 0.1rem;
+  }  
+
+.secpo {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  margin-top: -35px;
+  text-decoration: underline;
+}
+}
+
+@media screen and (max-width:860px) {
+  .secpo {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    text-decoration: underline;
+  }
+
+  .page-bottom {
+    position:relative;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    bottom: 0;
+    font-size: 0.1rem;
+  }
+  
+}
+
+.security {
+  color: white;
+}
+

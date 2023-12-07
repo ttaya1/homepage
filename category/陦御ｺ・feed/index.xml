@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>行事 - SINN MIRAI</title>
+	<atom:link href="/category/%E8%A1%8C%E4%BA%8B/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>信じた道を新しい 心（芯） を持って真っすぐ進んで行く、そんな会社であり続ける。</description>
+	<lastBuildDate>Tue, 26 Sep 2023 04:32:56 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>/wp-content/uploads/2023/06/logo_square-120x120.png</url>
+	<title>行事 - SINN MIRAI</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>内定式・決起会</title>
+		<link>/2023/09/26/opening-ceremony/</link>
+		
+		<dc:creator><![CDATA[管理者]]></dc:creator>
+		<pubDate>Tue, 26 Sep 2023 04:32:53 +0000</pubDate>
+				<category><![CDATA[行事]]></category>
+		<guid isPermaLink="false">https://sinn-mirai.com/?p=570</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p>２０２４新卒内定式<br />
+９月１５日（金）、２０２４新卒内定者について、内定式を開催いたしました。<br />
+内定式後は関東地区の内定者も交え、懇親会を実施いたしました。初の顔合わせとなり緊張されたかと思いますが、これから同期として力を合わせて、助け合っていただければと思います。残りの学生生活を存分に楽しんでいただき、来春のご入社お待ちしております。<br />
+決起会<br />
+１０月の社名変更に先立ち、金沢市内ホテルにて決起会を行いました。<br />
+コロナ禍により、大規模な開催を控えておりましたが、社員の団結を深めるべく全社員を対象とした決起会となりました。新たにお迎えした社員も多く、初めての顔を合わせる場ともなり、有意義な時間となりました。</p><p>The post <a href="/2023/09/26/opening-ceremony/">内定式・決起会</a> first appeared on <a href="/">SINN MIRAI</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>令和５年度入社式</title>
+		<link>/2023/04/03/ceremony/</link>
+		
+		<dc:creator><![CDATA[管理者]]></dc:creator>
+		<pubDate>Mon, 03 Apr 2023 07:35:00 +0000</pubDate>
+				<category><![CDATA[行事]]></category>
+		<guid isPermaLink="false">https:/2023/05/11/%e3%81%93%e3%82%93%e3%81%ab%e3%81%a1%e3%81%af%e4%b8%96%e7%95%8c%ef%bc%81/</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p>令和５年度の新入社員入社式を行いました。当社では文理問わず多くの先輩社員が活躍しています。新入社員みなさんのご活躍を楽しみにしております！</p><p>The post <a href="/2023/04/03/ceremony/">令和５年度入社式</a> first appeared on <a href="/">SINN MIRAI</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 0/115 objects using Redis
+Page Caching using Redis 
+Database Caching using Redis
+
+Served from: home-page.local @ 2023-12-07 00:37:55 by W3 Total Cache
+-->

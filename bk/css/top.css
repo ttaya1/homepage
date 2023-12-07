@@ -1,0 +1,1003 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #f0f2ff;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width:860px) {
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+}
+
+@media screen and (max-width:860px) {
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 5% 0;
+  }
+  }
+
+@media screen and (min-width:860px) {
+
+  .menu-1 {
+    display: none;
+  }
+  
+  .header {
+    height: 60px;
+    width: 100%;
+    padding: 0px 15px;
+    background-color:#f0f2ff;
+    position: fixed; /*常に画面の上に要素を固定*/
+    top: 0;
+    z-index: 1;
+    display: flex; /*直下の子要素を横並びにする*/
+  }
+  
+  nav {
+    margin: 0 0 0 auto;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .headlist {
+    display: flex; /*リストを横並びにする*/
+    list-style: none; /*listの中点（・）を消す*/
+    padding: 0;
+    margin: 0;
+  }
+  
+  .KSD {
+    position: relative;
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+  
+  .logo {
+    position: absolute;
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    top:20px;
+  
+  }
+  
+  .head {
+    color: #000000; /*黒文字にする*/
+    text-decoration: none; /*リンクの下線を削除*/
+    display: block; /*幅と高さを持ったブロック要素*/
+    line-height: 60px;
+    padding: 0 20px; /*各リスト項目の余白左右20px*/
+    position: relative; /*アンダーバーの位置を決めるための基準*/
+  }
+  
+  .headli  ::after {
+    position: absolute;
+    bottom: 20px; /*アンダーバーが位置する、各リストの下*/
+    left: 0; /*アンダーバーを各リストの左端に指定*/
+    content:  ''; 
+    width: 100%;
+    height: 2px;
+    background: hsla(0, 21%, 56%, 0.336);
+    transform: scale(0,1);
+    transform-origin: center top;
+    transition: transform 0.75s;
+  }
+  
+  .headli  :hover::after {
+    transform: scale(1, 1);
+  }
+  }
+  
+  @media screen and (max-width:860px) {
+    
+    .headlist {
+      display: none;
+    }
+  
+    .logo {
+      position: absolute;
+      color: #000000; /*黒文字にする*/
+      text-decoration: none; /*リンクの下線を削除*/
+      display: block; /*幅と高さを持ったブロック要素*/
+      top:20px;
+    }
+  
+    .KSD {
+      position: relative;
+      color: #000000; /*黒文字にする*/
+      text-decoration: none; /*リンクの下線を削除*/
+      display: block; /*幅と高さを持ったブロック要素*/
+      font-weight: bold;
+
+    }
+    
+  
+    .header {
+      height: 60px;
+      width: 100%;
+      padding: 0px 15px;
+      background-color:#f0f2ff;
+      position: fixed; /*常に画面の上に要素を固定*/
+      top: 0;
+      z-index: 1;
+    }
+    
+  
+    .menu-1 {
+      margin: 0;
+      position: fixed;
+      text-align: right;
+      width: 20%;
+      text-align: right;
+      left: 80%;
+      top: 23px;
+      z-index: 100;
+  }
+  
+  .menu-1 a {
+      display: block;
+  /*  text-decoration: none;*/
+      color: #000;
+      font-size: 8px;
+      text-align: center;
+      position: relative;
+      margin: 20px 0;
+  }
+  
+  label {
+      display: block;
+      line-height: 1;
+      color :#000000;
+      background : transparent;
+      cursor :pointer;
+      position: relative;
+      z-index: 100;
+      width:100%;
+      text-align: center;
+      z-index: 100;
+      padding: 0 0 10px 0;
+  }
+  
+  input {
+      display: none;
+  }
+  
+  .menu-1 ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color:#f0f2ff;
+    }
+  
+  
+  .menu-1 li {
+      height: 0;
+      overflow: hidden;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      
+  }
+  
+  #menu_bar01:checked ~ #links01 li {
+      height: 54px;
+      opacity: 1;
+  }
+  
+  
+  .links01 {
+    z-index: 100;
+  }
+  
+  .menu_bar01 {
+    z-index: 100;
+  }
+  
+  .checkbox {
+    z-index: 100;
+  }
+  
+  }
+  
+@media screen and (min-width:860px) {
+  .image  {
+    position: absolute;
+    top:80px;
+    opacity: 0;
+    padding: 0 20%;
+    animation: change-img-anim 28s infinite;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    border-radius: 30% 0 30% 0;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .image  {
+    position: absolute;
+    top:80px;
+    opacity: 0;
+    animation: change-img-anim 28s infinite;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    border-radius: 30% 0 30% 0;
+  }
+}
+
+
+.image:nth-of-type(1) {
+  animation: change-img-anim-first 28s infinite;
+  animation-delay: 0s;
+}
+.image:nth-of-type(2) {
+  animation-delay: 7s;
+}
+.image:nth-of-type(3) {
+  animation-delay: 14s;
+}
+.image:nth-of-type(4) {
+  animation-delay: 21s;
+}
+
+@keyframes change-img-anim-first {
+  0%{ opacity: 0;}
+  30%{ opacity: 1;}
+  36%{ opacity: 1;}
+  45%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+@keyframes change-img-anim {
+  0%{ opacity: 0;}
+  30%{ opacity: 1;}
+  36%{ opacity: 0;}
+  45%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+
+@media screen and (min-width:860px) {
+.jigyotitle {
+  font-size: 1vw;
+  position: relative;
+  margin: 0 10%;
+  top:35vw;
+}
+}
+
+@media screen and (max-width:860px) {
+  .jigyotitle {
+    font-size: 1rem;
+    position: relative;
+    margin: 0 5%;
+    top:65vw;
+    text-align: center;
+  }  
+}
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*
+IE11対策
+----------------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.jigyo {
+  display: -ms-grid;
+  overflow: hidden;
+  position:relative;
+
+}
+/*----------------------------*/
+
+@media screen and (min-width:860px) {
+.jigyo_wrap {
+  display: flex;
+  overflow: hidden;
+  position:relative;
+  top: 37vw;
+  margin: 0 10%;
+  border-radius: 30px;
+}
+
+.top-jigyo {
+  display: none;
+}
+
+.fotop-content {
+  display: none;
+}
+
+}
+
+@media screen and (max-width:860px) {
+  .jigyo_wrap {
+    display: none;
+  }
+  
+}
+
+.jigyo_list {
+  position:relative;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.jigyo_list--left{
+animation :infinity-scroll-left 10s infinite linear 0.5s both;
+position: relative;
+}
+
+.jigyo_item {
+  width: calc(100vw / 6);
+}
+
+.jigyo_item > img{
+   width: 100%;
+}
+
+.jigyo_wrap:hover .jigyo_list--left{
+  animation-play-state: paused;
+}
+
+.jigyofot {
+  position: relative;
+  width:100%;
+  height:100%;
+}
+
+.top-jigyo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 66vw;
+  border-radius: 0 0 0 100%/0 0 0 100%;
+  overflow: hidden;
+}
+
+.fotop {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.fotop-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5vw;
+  padding: 0 2%;
+  top: 42vw;
+  font-family:'Times New Roman', Times, serif;
+  color: #000;
+}
+
+.jigyo-top {
+  color: #000000; /*黒文字にする*/
+  text-decoration: none; /*リンクの下線を削除*/
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+}
+
+.hr1{
+  position:relative;
+  margin-top: 0vw;
+  height: 3px;
+	border-width: 0;
+	background-color: #f3ecec;
+	background-image: -webkit-linear-gradient(right,
+	#ddd6d6 5px,#855454 5px);
+	background-image: linear-gradient(-90deg,
+	#ddd6d6 5px,#855454 5px);
+	background-size: 10px 10px;
+  padding: 0 10%;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+@media screen and (min-width:860px) {
+.motto {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0 23%;
+  top: 17vh;
+  font-size: 1.5vw;
+  color:rgb(255, 255, 255);
+  font-family:'Times New Roman', Times, serif;
+}
+}
+
+@media screen and (max-width:860px) {
+  .motto {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 10%;
+    top: 17vh;
+    font-size: 2vw;
+    color:rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+  }
+}
+
+@media screen and (min-width:860px) {
+.torikumititle {
+  font-size: 1vw;
+  position: relative;
+  margin: 0 10%;
+  top:41vw;
+}
+}
+
+@media screen and (max-width:860px) {
+  .torikumititle {
+    font-size: 1rem;
+    position: relative;
+    margin: 0 5%;
+    top:50vw;
+    text-align: center;
+  }
+  
+}
+
+@media screen and (min-width:860px) {
+.torikumilist {
+  position:relative;
+  top:43vw;
+  display: flex;
+  width: 100%;
+  text-align: center  ;
+  padding: 0 10%;
+}
+}
+
+@media screen and (max-width:860px) {
+  .torikumilist {
+    position:relative;
+    top:50vw;
+    width: 100%;
+    text-align: center  ;
+    padding: 0;
+  }
+  
+}
+
+@media screen and (min-width:860px) {
+.torikumifot {
+  position: relative;
+  width:100%;
+  height:auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 30px;
+  transition-duration: 0.3s;
+}
+}
+
+.active-contents .torikumifot{
+  width: 100%;
+  transition-duration: 0.3s;
+}
+
+.img_wrap:hover .torikumifot{
+  opacity: 0.6;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width:860px) {
+  .torikumifot {
+    position: relative;
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0 0 0 80%/0 0 0 80%;
+  }
+}
+
+@media screen and (min-width:860px) {
+.active-contents {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 10px;
+}
+}
+
+@media screen and (max-width:860px) {
+  .active-contents {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 10vw 0;
+    padding: 0;
+    text-align: center;
+  }  
+}
+
+@media screen and (min-width:860px) {
+  .active-con {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 0.5vw;
+    padding: 0 2%;
+    font-family:'Times New Roman', Times, serif;
+    color: #000;
+  }
+  }
+  
+
+@media screen and (max-width:860px) {
+.active-con {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5vw;
+  padding: 0 2%;
+  font-family:'Times New Roman', Times, serif;
+  color: #000;
+  text-align: left;
+  margin-top: -15vw;
+}
+}
+
+.event {
+  color:hsl(319, 91%, 48%);
+}
+
+.club {
+  color:rgb(48, 199, 86);
+}
+
+.new-recruit-pri-info {
+  position: relative;
+  display: flex;
+}
+
+@media screen and (min-width:860px) {
+.newslist {
+  position:relative;
+  height: 10.5vw;
+  padding: 0 10px 10px 10px;
+  background: rgb(254, 227, 227);
+  display: flex;
+  font-size: 10px;
+  overflow-y: scroll;
+  scrollbar-face-color: #999;
+  scrollbar-track-color: #eee;
+  -webkit-overflow-scrolling: touch;
+}
+}
+
+@media screen and (max-width:860px) {
+  .newslist {
+    position:relative;
+    padding: 0 10px 10px 10px;
+    background: rgb(254, 227, 227);
+    display: flex;
+    font-size: 10px;
+    overflow-y: scroll;
+    scrollbar-face-color: #999;
+    scrollbar-track-color: #eee;
+    -webkit-overflow-scrolling: touch;
+  }
+  }  
+
+.newslist::-webkit-scrollbar {
+  width: 5px;
+}
+.newslist::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+.newslist::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.days {
+  text-decoration: underline;
+}
+
+@media screen and (min-width:860px) {
+.news-recruit-privacy {
+  font-size: 1vw;
+  position: relative;
+  width:auto;
+  display: flex;
+  top: 44vw;
+  margin: 0 10%;
+}
+}
+
+@media screen and (max-width:860px) {
+  .news-recruit-privacy {
+    font-size: 1vw;
+    position: relative;
+    width:auto;
+    top: 55vw;
+    margin: 0 5%;
+  }  
+}
+
+@media screen and (min-width:860px) {
+.newstitle {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media screen and (max-width:860px) {
+  .newstitle {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+
+  }
+  }  
+
+@media screen and (min-width:860px) {
+.recruittitle {
+  position: relative;
+  width: 100%;
+  padding: 0 5%;
+}
+}
+
+@media screen and (max-width:860px) {
+  .recruittitle {
+    position: relative;
+    width: 100%;
+    padding: 5% 5% 0 0;
+    font-size: 1rem;
+    text-align: center;
+  }  
+}
+
+@media screen and (min-width:860px) {
+.privacytitle {
+  position: relative;
+  width: 100%;
+  font-size: 1vw;
+}
+}
+
+@media screen and (max-width:860px) {
+  .privacytitle {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10% 0 0 0;
+  }
+  }
+
+@media screen and (min-width:860px) {
+  .privacytitle {
+    position: relative;
+    width: 100%;
+  }  
+}
+
+.ruletitle {
+  position: relative;
+  width: 100%;
+  margin: 0 0 0 5%;
+}
+
+.smafo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.recruitfot {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width:860px) {
+  .recruitfot {
+    position: relative;
+    height: auto;
+    padding: 0 20%;
+  }
+  
+  .recruitlist {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 860px){
+.recruitlist {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+}
+
+@media screen and (min-width: 860px){
+.privacylist {
+  position: relative;
+  width: 100%;
+  font-size: 8px;
+  text-align: center;
+  padding: 0 20%;
+}
+}
+
+
+
+@media screen and (max-width:860px) {
+  .privacylist {
+    position: relative;
+    width: 100%;
+    font-size: 8px;
+    text-align: center;
+    }  
+}
+
+  .aaaaa {
+    position:relative;
+    width: 100%;
+    display:flex;
+  }
+
+.Pmark {
+  position: relative;
+  width:50%;
+  height: auto;
+}
+
+.info {
+  position: relative;
+  list-style: none; /*listの中点（・）を消す*/
+  text-align: center;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.infotext {
+  color: #000000; /*黒文字にする*/
+}
+
+@media screen and (min-width:860px) {
+.footber {
+  width: 100%;
+  top: 54vw;
+  height: 150px;
+  background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+  background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+  background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+  position:relative;
+  z-index: 1;
+  list-style: none; /*listの中点（・）を消す*/
+  color:rgb(255, 255, 255);
+}
+}
+
+@media screen and (max-width:860px) {
+  .footber {
+    width: 100%;
+    top: 70vw;
+    background: linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -moz-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    background: -webkit-linear-gradient(hsl(160, 4%, 17%), #314c6b);
+    position:relative;
+    z-index: 1;
+    list-style: none; /*listの中点（・）を消す*/
+    color:rgb(255, 255, 255);
+  }
+  }
+  
+
+@media screen and (min-width:860px) {
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 10%;
+}
+}
+
+@media screen and (max-width:860px) {
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }  
+}
+
+.foot {
+  position: relative;
+  color: #000000; /*黒文字にする*/
+  text-decoration: none; /*リンクの下線を削除*/
+  font-weight: bold;
+  width:auto;
+  height: auto;
+  padding: 0 10%;
+  color:rgb(255, 255, 255);
+}
+
+.footli {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.foot-gaiyo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.foot-gaiyo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+
+h4 {
+  position: relative;
+  font-size: 10px;
+  display: block;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.foot-jigyo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.foot-active {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.foot-recruit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+
+.foot-contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.menu {
+  display: none;
+}
+
+.KSD-small {
+  display: none;
+}
+
+.smallver {
+  display: none;
+}
+
+.copy-right {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width:860px) {
+  .page-bottom {
+    position:absolute;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    bottom: 0;
+    font-size: 0.1rem;
+  }  
+
+.secpo {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  margin-top: -35px;
+}
+}
+
+@media screen and (max-width:860px) {
+  .secpo {
+    position: relative;
+    text-align: right;
+    width: 100%;
+  }
+
+  .page-bottom {
+    position:relative;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    bottom: 0;
+    font-size: 0.1rem;
+  }
+  
+}
+
+.security {
+  color: white;
+}
+
+
+
+
